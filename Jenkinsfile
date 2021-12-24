@@ -1,4 +1,5 @@
 // Shell commands example
+/*
 pipeline {
     agent any
     stages {
@@ -13,9 +14,10 @@ pipeline {
         }
     }
 }
+*/
 
 // Python build example
-/*
+
 pipeline {
     agent { docker { image 'python:3.10.1-alpine' } }
     stages {
@@ -26,4 +28,4 @@ pipeline {
         }
     }
 }
-*/
+
