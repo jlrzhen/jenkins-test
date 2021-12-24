@@ -1,4 +1,21 @@
-Jenkinsfile (Declarative Pipeline)
+// Shell commands example
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "Hello World"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
+            }
+        }
+    }
+}
+
+// Python build example
+/*
 pipeline {
     agent { docker { image 'python:3.10.1-alpine' } }
     stages {
@@ -9,3 +26,4 @@ pipeline {
         }
     }
 }
+*/
