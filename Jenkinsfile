@@ -19,7 +19,7 @@ pipeline {
 // Python build example
 
 pipeline {
-    agent any/*{ docker { image 'python:3.10.1-alpine' } }*/
+    agent { docker { image 'python:3.10.1-alpine' } }
     stages {
         stage('build') {
             steps {
