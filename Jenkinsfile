@@ -23,8 +23,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'apt-get update'
-                sh 'apt-get install python'
                 sh 'python --version'
             }
         }
